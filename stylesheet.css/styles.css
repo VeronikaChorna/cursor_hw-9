@@ -208,7 +208,7 @@ body {
     }
 }
 
-/* ----------------CSS for desktop content2---------------- */
+/* ----------------CSS for desktop content3---------------- */
 .content3 {
     display: flex;
     width: 100%;
@@ -243,4 +243,44 @@ body {
     .content3-img img {
         width: 100%;
     }
+}
+
+/* ----------------CSS for desktop content4---------------- */
+
+.content4 {
+    max-height: 735px;
+    display: flex;
+    flex-direction: column;
+    background-color: #00ADEE;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.content4 h3 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: auto;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
 }
