@@ -9,6 +9,7 @@ body {
     background-color: #F4F6F9; 
     display: flex;
     width: 100%;
+    padding-bottom: 100px;
 }
 
 .sports { 
@@ -53,6 +54,12 @@ body {
     width: 100%;
 }
 
+
+@media screen and (max-width: 1200px) {
+    .sports-images {
+        display: none;
+    }
+}
 
 /* ----------------Media for mobile content1---------------- */
 
