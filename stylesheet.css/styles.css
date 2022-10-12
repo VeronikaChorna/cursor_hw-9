@@ -1,5 +1,133 @@
-/* @media screen (max-width:600px) {
-    
-} */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-/* ----------------Media for mobiles---------------- */
+body {
+    background-color: #F4F6F9;;
+}
+
+/* ----------------CSS for desktop content1---------------- */
+.content1 {
+    display: flex;
+    width: 100%;
+}
+
+.sports { 
+   width: 40%;
+   margin-left: 100px;
+   margin-top: 60px;
+}
+
+.sports>h3 {
+    width: 546px;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #333333;
+    margin: 100px 0px 30px 0px;
+}
+
+.sports>p {
+    width: 453px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #4F4F4F;
+    margin-bottom: 50px;
+}
+
+.google-img {
+    margin-left: 35px;
+}
+
+.img-cont1 {
+    display: flex;
+}
+
+.sports-images {
+    width: 60%;
+}
+
+.sports-images>img {
+    width: 100%;
+}
+
+
+/* ----------------Media for mobile content1---------------- */
+
+@media screen and (max-width: 720px) {
+    .content1 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sports {
+        margin: 5%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sports>h3 {
+        width: 320px;
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 50px;
+    }
+
+    .sports>p {
+        width: 320px;
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .google-img {
+        margin-left: 10px;
+    }
+
+    .img-cont1 {
+        display: flex;
+    }
+
+    .sports-images {
+        display: none;
+    }
+}
+
+
+/* ----------------CSS for desktop content2---------------- */
+.content2 {
+    display: flex;
+    width: 100%;
+    margin-top: 160px;
+}
+
+.content2-img {
+    width: 50%;
+}
+
+.bg-img {
+    width: 100%;
+    opacity: 0.5;
+    position: relative;
+}
+
+.teams-logo {
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+}
+
+.fotball-video {
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+}
+
+.experience {
+    width: 50%;
+}
+
+
+
+
+
