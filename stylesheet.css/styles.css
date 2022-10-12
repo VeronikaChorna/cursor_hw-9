@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 body {
-    background-color: #F4F6F9;;
+    background-color: #F4F6F9;
 }
 
 /* ----------------CSS for desktop content1---------------- */
@@ -64,7 +64,9 @@ body {
     }
 
     .sports {
-        margin: 5%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
@@ -88,6 +90,8 @@ body {
 
     .img-cont1 {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .sports-images {
@@ -99,35 +103,94 @@ body {
 /* ----------------CSS for desktop content2---------------- */
 .content2 {
     display: flex;
-    width: 100%;
-    margin-top: 160px;
+    margin-top: 100px;
 }
 
 .content2-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
-}
-
-.bg-img {
-    width: 100%;
-    opacity: 0.5;
-    position: relative;
-}
-
-.teams-logo {
-    position: absolute;
-    margin: 0px 0px 0px 0px;
-}
-
-.fotball-video {
-    position: absolute;
-    margin: 0px 0px 0px 0px;
+    background-image: url("./images/Rectangle.png");
 }
 
 .experience {
     width: 50%;
+    padding: 100px 0px 100px 50px;
 }
 
+.experience h4 {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00ADEE;
+}
 
+.experience h3 {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    color: #333333;
+    margin-top: 30px;
+}
 
+.experience p {
+    width: 80%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #4F4F4F;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
+.experience a {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00ADEE;
+    text-decoration: none;
+}
+
+/* ----------------Media for mobile content2---------------- */
+@media screen and (max-width: 720px) {
+    .content2 {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+    .experience {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .experience h4 {
+        width: 320px;
+    } */
+
+    .experience h3 {
+        width: 320px;
+    }
+
+    .experience p {
+        width: 320px;
+    }
+
+    .experience a {
+        width: 320px;
+    }
+
+    .content2-img {
+        width: 100%;
+    }
+
+}
 
