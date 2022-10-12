@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 body {
-    background-color: #F4F6F9;
+    background-color: #FFFFFF;
 }
 
 /* ----------------CSS for desktop content1---------------- */
 .content1 {
+    background-color: #F4F6F9; 
     display: flex;
     width: 100%;
 }
@@ -70,6 +71,8 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 0px;
+        margin-top: 40px;
     }
 
     .sports>h3 {
@@ -104,7 +107,6 @@ body {
 /* ----------------CSS for desktop content2---------------- */
 .content2 {
     display: flex;
-    margin-top: 100px;
 }
 
 .content2-img {
@@ -112,12 +114,12 @@ body {
     justify-content: center;
     align-items: center;
     width: 50%;
-    background-image: linear-gradient(to left, #F4F6F9 2%, transparent 80%), url("./images/Rectangle.png");
+    background-image: linear-gradient(to left, #FFFFFF 2%, transparent 80%), url("./images/Rectangle.png");
 }
 
 .experience {
     width: 50%;
-    padding: 100px 0px 100px 50px;
+    padding: 100px 0px 100px 100px;
 }
 
 .experience h4 {
@@ -163,7 +165,6 @@ body {
     .content2 {
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 20px;
     }
     .experience {
         width: 100%;
@@ -172,6 +173,8 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0px;
+        margin-top: 40px;
     }
 
     .experience h4 {
@@ -194,7 +197,43 @@ body {
         width: 100%;
         background-image: url("./images/Rectangle.png");
         background-size: auto;
+        margin-top: 40px;
     }
-
 }
 
+/* ----------------CSS for desktop content2---------------- */
+.content3 {
+    display: flex;
+    width: 100%;
+}
+
+.content3-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.content3-img img {
+    width: 80%;
+}
+
+@media screen and (max-width: 720px) {
+    .content3 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .content3-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 40px;
+    }
+    
+    .content3-img img {
+        width: 100%;
+    }
+}
