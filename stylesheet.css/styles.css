@@ -417,7 +417,6 @@ body {
     background-color: #FFFFFF; 
     display: flex;
     width: 100%;
-    padding-bottom: 100px;
 }
 
 .content7-images {
@@ -503,3 +502,68 @@ body {
     }
 }
 
+/* ----------------CSS for desktop content7---------------- */
+.content8 {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #00ADEE;
+}
+
+.content8-logo {
+    width: 30%;
+}
+
+.nav {
+    width: 40%;
+}
+
+.nav a {
+    text-decoration: none;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+
+.media img {
+    margin-left: 30px;
+}
+
+
+/* ----------------CSS for mobile content7---------------- */
+@media screen and (max-width: 720px) {
+    .content8 {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .content8-logo {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .nav {
+        width: 100%;
+        margin-top: 20px;
+        order: 3;
+    }
+
+    .nav a {
+        margin-right: 5px;
+    }
+
+    .media {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .media img {
+        margin-left: 10px;
+    }
+}
